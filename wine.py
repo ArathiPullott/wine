@@ -46,7 +46,6 @@ Y=wine.color
 
 df_new=(X-X.mean())/X.std()
 from sklearn.linear_model import LogisticRegression
-from sklearn import metrics
 logsk=LogisticRegression()
 logsk.fit(X,Y)
 ##prediction
