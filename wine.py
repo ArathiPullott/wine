@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
-from sklearn import datasets
-from sklearn.ensemble import RandomForestClassifier
+
 
 st.write('''
 # Wine color prediction app
@@ -9,7 +8,6 @@ This will classify win color
 ''')
 
 st.sidebar.header('user input parameter')
-
 def user_input_parameters():
     fixed_acidity=st.sidebar.slider('fixed_acidity',3.8, 15.9, 5.4)
     volatile_acidity=st.sidebar.slider('volatile_acidity',0.08, 1.58, 1.4)
